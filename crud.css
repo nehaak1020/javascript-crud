@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;;
+    height:100vh;
+}
+.wrapper{
+    background-color: #5345;
+    height:auto;
+    min-height: 100%;
+}
+.adduser{
+    background-color: #fff;
+    padding:1rem;
+    width: 768px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 16px #333;
+}
+.adduser h3 {
+    margin: 0;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid #000;
+    text-transform: capitalize;
+}
+.userform{
+    display:flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.userform .inputfield label{
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.usertable{
+    background-color: #fff;
+    padding:1rem;
+    width: 768px;
+    margin: auto;
+    border-radius: 5px;
+}
+.fa-user-edit {
+    color: forestgreen;
+    cursor: pointer;
+}
+.fa-trash {
+    color: red;
+    cursor: pointer;
+}
+.form-control, .form-control:focus {
+    box-shadow: none;   
+    border: 2px solid #ddd;
+}
+.btn{
+    text-transform: capitalize;
+    width: 100%;
+}
+.inputfield{
+    width: 100%;
+}
+
+@media (max-width:600px){
+    .adduser, .usertable{
+        width:100%;
+    }
+    .userform, .buttons{
+        flex-direction: column;
+    }
+    .wrapper{
+        height: auto;
+    }
+}
